@@ -18,8 +18,7 @@
         width: 160px;
         padding: 16px;
         background-color: #f0f0f0;
-        height: 100%;
-        min-height: 100vh;
+        height: 100vh;
         box-shadow: 2px 0 5px rgba(0,0,0,0.1);
         position: relative;
       }
@@ -36,17 +35,12 @@
       .sidebar a:hover {
         text-decoration: underline;
       }
-      .sidebar .last-updated {
-        position: absolute;
-        bottom: 20px;
-        left: 16px;
-        right: 16px;
-        font-size: 10px;
+      .last-updated {
+        font-size: 9px;
         color: #888;
-        margin-bottom: 16px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        margin-top: 40px;
+        margin-bottom: 32px;
+        text-align: right;
       }
       .content {
         flex-grow: 1;
@@ -73,9 +67,6 @@
     <div class="sidebar">
         <a href="index.html">Home</a>
         <a href="about_me.html" class="current">About Me</a>
-        <div class="last-updated">
-          <i>Updated: 2025-06-25, 00:13 CT (GMT-5)</i>
-        </div>
     </div>
     <div class="content">
         <center>
@@ -84,6 +75,7 @@
         <p style="text-align:center; font-size:14pt; font-family: serif; margin-top: 40px;">
             Under construction
         </p>
+        <div class="last-updated"><i>Last Updated: 2025-06-25, 00:13 CT (GMT-5)</i></div>
     </div>
 </body>
 
