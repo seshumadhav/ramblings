@@ -14,7 +14,7 @@ timestamp=$(TZ="America/Chicago" date +"%Y-%m-%d, %H:%M CT (GMT-5)")
 
 # Update all HTML files in the directory
 for file in *.html; do
-  sed -i "s|<i>Last updated: .* CT (GMT-5)</i>|<i>Last updated: $timestamp</i>|" "$file"
+  sed -i "s|<i>[^<]*: .* CT (GMT-5)</i>|<i>Last Updated: $timestamp</i>|" "$file"
 done
 
 echo "Timestamps updated to: $timestamp"
