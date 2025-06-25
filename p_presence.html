@@ -23,7 +23,10 @@
         background-color: #f0f0f0;
         height: 100vh;
         box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-        position: relative;
+        position: sticky;
+        top: 0;
+        left: 0;
+        flex-shrink: 0;
       }
       .sidebar a {
         display: block;
@@ -38,6 +41,14 @@
       .sidebar a:hover {
         text-decoration: underline;
       }
+      .main-area {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        min-height: 100vh;
+        position: relative;
+        background: #fff;
+      }
       .content {
         flex-grow: 1;
         padding: 20px;
@@ -46,31 +57,16 @@
         color: #222;
         background: #fff;
         position: relative;
-        min-height: unset;
-      }
-      .last-updated {
-        font-size: 7.5px;
-        color: #888;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        margin: 0 0 8px 12px;
-        text-align: left;
-        width: max-content;
-        background: #fff;
       }
       .last-updated-global {
-        position: fixed;
-        left: 0;
-        bottom: 0;
         font-size: 7.5px;
         color: #888;
-        margin: 0 0 8px 12px;
+        margin: 0 0 16px 16px;
         text-align: left;
         width: max-content;
         background: #fff;
-        z-index: 1000;
-        pointer-events: none;
+        align-self: flex-start;
+        position: static;
       }
       ul {
         font-size: 15px;
@@ -105,35 +101,37 @@
         <a href="index.html">Home</a>
         <a href="about_me.html">About Me</a>
     </div>
-    <div class="content">
-        <center><h3>Speaking Up With Impact: Conveying Presence in Leadership Meetings</h3></center>
-        <b>Author:</b> Benjamin Laker (Forbes)<br>
-        <b>Topic:</b> Communicating presence and influence in senior-level meetings<br>
-        <b>Context:</b> How senior engineers and professionals can show thoughtful presence in leadership settings<br><br>
+    <div class="main-area">
+        <div class="content">
+            <center><h3>Speaking Up With Impact: Conveying Presence in Leadership Meetings</h3></center>
+            <b>Author:</b> Benjamin Laker (Forbes)<br>
+            <b>Topic:</b> Communicating presence and influence in senior-level meetings<br>
+            <b>Context:</b> How senior engineers and professionals can show thoughtful presence in leadership settings<br><br>
 
-        <b>Key Message:</b><br>
-        Merely being present or occasionally speaking in meetings with senior leadership is not enough. Influence comes from strategic communication—preparing in advance, choosing the right moment to contribute, and following up afterward. This article teaches how to engage meaningfully and amplify your impact.<br><br>
+            <b>Key Message:</b><br>
+            Merely being present or occasionally speaking in meetings with senior leadership is not enough. Influence comes from strategic communication—preparing in advance, choosing the right moment to contribute, and following up afterward. This article teaches how to engage meaningfully and amplify your impact.<br><br>
 
-        <b>Main Points:</b><br>
-        <ul>
-        <li><b>Visibility ≠ Influence:</b> You must offer value-driven input, not just surface-level participation.</li>
-        <li><b>Prep with Purpose:</b> Plan one or two clear points that align with the agenda and your role.</li>
-        <li><b>Timing Matters:</b> Speak at moments of clarity or ambiguity—not just when called upon.</li>
-        <li><b>Phrase with Precision:</b> Deliver clear, specific suggestions, not vague opinions.</li>
-        <li><b>Amplify Through Action:</b> Reinforce your points via follow-ups and one-on-one conversations.</li>
-        </ul><br>
+            <b>Main Points:</b><br>
+            <ul>
+            <li><b>Visibility ≠ Influence:</b> You must offer value-driven input, not just surface-level participation.</li>
+            <li><b>Prep with Purpose:</b> Plan one or two clear points that align with the agenda and your role.</li>
+            <li><b>Timing Matters:</b> Speak at moments of clarity or ambiguity—not just when called upon.</li>
+            <li><b>Phrase with Precision:</b> Deliver clear, specific suggestions, not vague opinions.</li>
+            <li><b>Amplify Through Action:</b> Reinforce your points via follow-ups and one-on-one conversations.</li>
+            </ul><br>
 
-        <b>Sample Statement:</b><br>
-        <i>"One thing that worked well in our last campaign was personalized follow-ups. If we applied that here, we could see higher engagement."</i><br><br>
+            <b>Sample Statement:</b><br>
+            <i>"One thing that worked well in our last campaign was personalized follow-ups. If we applied that here, we could see higher engagement."</i><br><br>
 
-        <b>Takeaway:</b><br>
-        Your presence in senior meetings is a chance to advocate for your team and your work. Prepare, speak with purpose, and engage with consistency to build long-term influence.
+            <b>Takeaway:</b><br>
+            Your presence in senior meetings is a chance to advocate for your team and your work. Prepare, speak with purpose, and engage with consistency to build long-term influence.
 
-        <hr style="width:100%;">
-        <div class="tags-section">
-          <b>Tags:</b> <span>leadership</span><span>communication</span><span>presence</span>
+            <hr style="width:100%;">
+            <div class="tags-section">
+              <b>Tags:</b> <span>leadership</span><span>communication</span><span>presence</span>
+            </div>
         </div>
+        <div class="last-updated-global"><i>Last Updated: 2025-06-25, 00:41 CT (GMT-5)</i></div>
     </div>
-    <div class="last-updated-global"><i>Last Updated: 2025-06-25, 00:38 CT (GMT-5)</i></div>
 </body>
 </html>

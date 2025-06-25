@@ -20,7 +20,18 @@
     background-color: #f0f0f0;
     height: 100vh;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    flex-shrink: 0;
+  }
+  .main-area {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100vh;
     position: relative;
+    background: #fff;
   }
   .content {
     flex-grow: 1;
@@ -30,7 +41,16 @@
     color: #222;
     background: #fff;
     position: relative;
-    min-height: unset;
+  }
+  .last-updated-global {
+    font-size: 7.5px;
+    color: #888;
+    margin: 0 0 16px 16px;
+    text-align: left;
+    width: max-content;
+    background: #fff;
+    align-self: flex-start;
+    position: static;
   }
   ul {
     font-size: 15px;
@@ -58,19 +78,6 @@
   .sidebar a:hover {
     text-decoration: underline;
   }
-  .last-updated-global {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    font-size: 7.5px;
-    color: #888;
-    margin: 0 0 8px 12px;
-    text-align: left;
-    width: max-content;
-    background: #fff;
-    z-index: 1000;
-    pointer-events: none;
-  }
 </style>
 </head><body>
 
@@ -78,13 +85,14 @@
   <a href="index.html" class="current">Home</a>
   <a href="about_me.html">About Me</a>
 </div>
-
-<div class="content">
-  <h2>Hi, I am Seshu. Welcome to my world of ramblings. Hope you like it!</h2>
-  <ul>
-    <li><a href="p_presence.html">Speaking Up With Impact: Conveying Presence in Leadership Meetings, June 2025</a></li>
-    <li><a href="p_voice_matters.html">Why Your Voice Matters: Conveying Presence in Leadership Meetings as a Senior Engineer, June 2025</a></li>
-  </ul>
+<div class="main-area">
+  <div class="content">
+    <h2>Hi, I am Seshu. Welcome to my world of ramblings. Hope you like it!</h2>
+    <ul>
+      <li><a href="p_presence.html">Speaking Up With Impact: Conveying Presence in Leadership Meetings, June 2025</a></li>
+      <li><a href="p_voice_matters.html">Why Your Voice Matters: Conveying Presence in Leadership Meetings as a Senior Engineer, June 2025</a></li>
+    </ul>
+  </div>
+  <div class="last-updated-global"><i>Last Updated: 2025-06-25, 00:41 CT (GMT-5)</i></div>
 </div>
-<div class="last-updated-global"><i>Last Updated: 2025-06-25, 00:38 CT (GMT-5)</i></div>
 </body></html>
