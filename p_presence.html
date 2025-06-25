@@ -2,16 +2,56 @@
 
 <head>
     <title>Speaking Up With Impact</title>
+    <style>
+      @font-face {
+        font-family: "Times New Roman";
+        src: local("Times New Roman"), local("TimesNewRoman"), serif;
+      }
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      .sidebar {
+        width: 220px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        height: 100vh;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      }
+      .content {
+        flex-grow: 1;
+        padding: 20px;
+      }
+      .sidebar h4 {
+        margin-top: 0;
+      }
+      .sidebar a {
+        display: block;
+        margin: 10px 0;
+        color: #333;
+        text-decoration: none;
+      }
+      .sidebar a.current {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .sidebar a:hover {
+        text-decoration: underline;
+      }
+    </style>
 </head>
 
 <body>
-
     <div class="sidebar">
         <h4>Index</h4>
-        <a href="index.html" class="current">All Posts</a>
+        <a href="index.html">All Posts</a>
         <a href="about_me.html">About Me</a>
+        <a href="p_presence.html" class="current">Presence</a>
+        <a href="p_voice_matters.html">Voice Matters</a>
     </div>
-
     <div class="content">
         <center>
             <h3>Speaking Up With Impact: Conveying Presence in Leadership Meetings</h3>
@@ -38,11 +78,7 @@
 
         <b>Sample Statement:</b><br>
         <i>"One thing that worked well in our last campaign was personalized follow-ups. If we applied that here, we
-            could see higher engagement."</i><br><br>
-
-        <b>Takeaway:</b><br>
-        Your presence in senior meetings is a chance to advocate for your team and your work. Prepare, speak with
-        purpose, and engage with consistency to build long-term influence.
+        could see similar results."</i>
     </div>
 </body>
 
