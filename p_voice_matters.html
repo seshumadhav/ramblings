@@ -15,7 +15,10 @@
         font-size: 12pt;
         margin: 0;
         padding: 0;
+        min-height: 100vh;
         display: flex;
+        flex-direction: row;
+        position: relative;
       }
       .sidebar {
         width: 160px;
@@ -39,16 +42,18 @@
       .sidebar a:hover {
         text-decoration: underline;
       }
-      .last-updated {
-        font-size: 7.5px;
-        color: #888;
-        position: absolute;
+      .last-updated-global {
+        position: fixed;
         left: 0;
         bottom: 0;
+        font-size: 7.5px;
+        color: #888;
         margin: 0 0 8px 12px;
         text-align: left;
         width: max-content;
         background: #fff;
+        z-index: 1000;
+        pointer-events: none;
       }
       .content {
         flex-grow: 1;
@@ -120,7 +125,7 @@
         <div class="tags-section">
           <b>Tags:</b> <span>voice</span><span>influence</span><span>leadership</span>
         </div>
-        <div class="last-updated"><i>Last Updated: 2025-06-25, 00:36 CT (GMT-5)</i></div>
     </div>
+    <div class="last-updated-global"><i>Last Updated: 2025-06-25, 00:38 CT (GMT-5)</i></div>
 </body>
 </html>
