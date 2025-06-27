@@ -1,0 +1,169 @@
+<html>
+<head>
+    <title>Zoom Out</title>
+    <style>
+      @font-face {
+        font-family: "Times New Roman";
+        src: local("Times New Roman"), local("TimesNewRoman"), serif;
+      }
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+      }
+      .sidebar {
+        width: 160px;
+        padding: 16px;
+        background-color: #f0f0f0;
+        height: 100%;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        left: 0;
+        flex-shrink: 0;
+      }
+      .sidebar a {
+        display: block;
+        margin: 10px 0;
+        color: #333;
+        text-decoration: none;
+      }
+      .sidebar a.current {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .sidebar a:hover {
+        text-decoration: underline;
+      }
+      .main-area {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        position: relative;
+        background: #fff;
+      }
+      .content {
+        flex-grow: 1;
+        padding: 20px;
+        font-family: serif;
+        font-size: 15px;
+        color: #222;
+        background: #fff;
+        position: relative;
+      }
+      .last-updated-global {
+        font-size: 7.5px;
+        color: #888;
+        margin: 0 0 16px 16px;
+        text-align: left;
+        width: max-content;
+        background: #fff;
+        align-self: flex-start;
+        position: static;
+      }
+      h1, h2 {
+        font-weight: 600;
+        color: #111;
+        font-family: inherit;
+      }
+      .example {
+        background: #f9f9f9;
+        padding: 1rem 1.25rem;
+        border-left: 4px solid #ccc;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        color: #333;
+        white-space: normal;
+      }
+      ol {
+        padding-left: 1.2rem;
+        color: #222;
+      }
+      blockquote {
+        margin-left: 1rem;
+        padding-left: 1rem;
+        border-left: 3px solid #ccc;
+        color: #555;
+        font-style: italic;
+      }
+    </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="index.html">Home</a>
+  <a href="about_me.html">About Me</a>
+</div>
+<div class="main-area">
+  <div class="content">
+    <h1>Zoom Out</h1>
+    <p>
+    As a junior engineer, you often describe your work in great detail: the bug you fixed, the refactor you did, the optimization you shipped. All accurate. All real work.
+    </p>
+    <p>
+    But when someone asks you, “What impact did it have?”, the answer sounds fuzzy. You might say, “It reduced CPU by 5%” or “It cleaned up the logs.” Cool — but <strong>so what?</strong>
+    </p>
+    <p>
+    This post is about learning to zoom out. Not to ignore the technical details — but to tell a story that shows why your work mattered. If you can connect your work to the product, the user, or the business, you're not just an executor. You're someone who sees the bigger picture.
+    </p>
+    <hr />
+    <h2>Example 1 — Job search: Removing expired jobs</h2>
+    <div class="example">
+      <strong>What I did:</strong><br />
+      Added a filter in the job retrieval layer to remove expired job listings.<br /><br />
+      <strong>Who it helped:</strong><br />
+      Job seekers, who were previously seeing listings they couldn’t apply to.<br /><br />
+      <strong>What changed:</strong><br />
+      Application rate for long-tail queries increased by 6%.<br /><br />
+      <strong>Why it matters:</strong><br />
+      Increased trust in search results and reduced bounce rates, helping retain users and increasing job applications — which in turn benefits employer engagement.
+    </div>
+    <h2>Example 2 — Job search: Improving search result ranking</h2>
+    <div class="example">
+      <strong>What I did:</strong><br />
+      Tuned the ranking algorithm to de-prioritize outdated or low-quality jobs using a recency + engagement-based scoring tweak.<br /><br />
+      <strong>Who it helped:</strong><br />
+      Job seekers searching for roles with generic queries like "software engineer" or "marketing", where the result set is very large.<br /><br />
+      <strong>What changed:</strong><br />
+      Click-through rate on the first page of results improved by 12%.<br />
+      Average time to apply decreased by 9%.<br /><br />
+      <strong>Why it matters:</strong><br />
+      Better first impressions and faster paths to action reduce user churn, improve job seeker satisfaction, and increase conversion for paid listings.
+    </div>
+    <h2>Example 3 — Banking system: Scaling reconciliation</h2>
+    <div class="example">
+      <strong>What I did:</strong><br />
+      Refactored the transaction reconciliation service to batch process updates from Kafka instead of processing one message at a time.<br /><br />
+      <strong>Who it helped:</strong><br />
+      Internal systems dependent on consistent account balances; reduced DB contention and improved downstream service reliability.<br /><br />
+      <strong>What changed:</strong><br />
+      We now support 3× the transaction volume without retry storms or throttling.<br /><br />
+      <strong>Why it matters:</strong><br />
+      Enabled the system to handle quarterly spike traffic without scaling up infrastructure, saving cost and preventing major customer-facing outages.
+    </div>
+    <hr />
+    <h2>A story-building framework</h2>
+    <ol>
+      <li><strong>What did you do?</strong></li>
+      <li><strong>Who did it affect?</strong></li>
+      <li><strong>What changed because of it?</strong></li>
+      <li><strong>Why does that matter to the business or users?</strong></li>
+    </ol>
+    <p>
+    If you can climb this ladder when describing your work, you're not just reporting activity — you're showing impact.
+    </p>
+    <p>When someone asks, "What have you been working on?", try answering with:</p>
+    <blockquote>
+      I did ___, which helped ___, and led to ___, which matters because ___.
+    </blockquote>
+    <p>That’s how you go from “I fixed a thing” to “I made a difference.”</p>
+  </div>
+  <div class="last-updated-global"><i>Last Updated: 2025-06-27, 08:47 CT (GMT-5)</i></div>
+</div>
+</body>
+</html>
