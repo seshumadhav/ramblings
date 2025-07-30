@@ -42,7 +42,7 @@
     position: relative;
   }
   .last-updated-global {
-    font-size: 3px;
+    font-size: 1px;
     color: #888;
     margin: 0 0 16px 16px;
     text-align: left;
@@ -81,7 +81,27 @@
     text-decoration: underline;
   }
 </style>
-</head><body>
+</head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-W5ZS5M8T');
+</script>
+<script>
+// Simple page view counter
+function updatePageHits() {
+  let hits = localStorage.getItem('pageHits') || 0;
+  hits = parseInt(hits) + 1;
+  localStorage.setItem('pageHits', hits);
+  document.getElementById('pageHits').textContent = hits;
+}
+// Update hits when page loads
+window.addEventListener('load', updatePageHits);
+</script>
+<body>
 
 <div class="sidebar">
   <a href="index.html" class="current">Home</a>
@@ -89,13 +109,13 @@
 </div>
 <div class="main-area">
   <div class="content">
-    <h3>Hi, I am Seshu. Welcome to my world of ramblings. Hope you like it!</h3>
+    <h3>Hi, I am Seshu. Welcome to my world of ramblings & rumblings. Hope you find them useful, for you or for others!</h3>
     <ul>
       <li><a href="p_speak_to_lead.html">Speak Up: Turning Presence Into Influence in Leadership Meetings, July 2025</a></li>
       <li><a href="p_lingo.html">Common Software Engineering Terms, July 2025</a></li>
       <li><a href="p_zoom_out.html">Zoom Out: Telling the Story of Your Work, June 2025</a></li>
     </ul>
   </div>
-  <div class="last-updated-global"><i>Last Updated: 2025-07-30, 15:32 CT (GMT-5)</i></div>
+  <div class="last-updated-global"><i>Last Updated: 2025-07-30, 15:32 CT (GMT-5) • Hits: <span id="pageHits">0</span></i></div>
 </div>
 </body></html>
