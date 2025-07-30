@@ -22,3 +22,5 @@ echo "Timestamps updated to: $timestamp"
 git add *.html
 git commit -m "$1"
 echo "Committed with message: $1"
+git push
+echo "Pushed to remote repository."
