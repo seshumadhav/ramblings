@@ -1,0 +1,176 @@
+<html>
+
+<head>
+    <title>Lingo</title>
+    <style>
+      @font-face {
+        font-family: "Times New Roman";
+        src: local("Times New Roman"), local("TimesNewRoman"), serif;
+      }
+      body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+      }
+      .sidebar {
+        width: 160px;
+        padding: 16px;
+        background-color: #f0f0f0;
+        height: 100%;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        left: 0;
+        flex-shrink: 0;
+      }
+      .sidebar a {
+        display: block;
+        margin: 10px 0;
+        color: #0066cc;
+        text-decoration: underline;
+      }
+      .sidebar a.current {
+        font-weight: bold;
+        color: #0066cc;
+        text-decoration: underline;
+      }
+      .sidebar a:hover {
+        color: #004499;
+        text-decoration: underline;
+      }
+      .main-area {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        position: relative;
+        background: #fff;
+      }
+      .content {
+        flex-grow: 1;
+        padding: 20px;
+        font-family: serif;
+        font-size: 15px;
+        color: #222;
+        background: #fff;
+        position: relative;
+      }
+      .last-updated-global {
+        font-size: 7.5px;
+        color: #888;
+        margin: 0 0 16px 16px;
+        text-align: left;
+        width: max-content;
+        background: #fff;
+        align-self: flex-start;
+        position: static;
+      }
+      ul {
+        font-size: 15px;
+        margin-left: 24px;
+      }
+      b {
+        font-size: 15px;
+      }
+      i {
+        font-size: 15px;
+      }
+      .tags-section {
+        margin-top: 40px;
+        font-size: 13px;
+        color: #555;
+      }
+      .tags-section span {
+        background: #e0e0e0;
+        border-radius: 4px;
+        padding: 2px 8px;
+        margin-right: 6px;
+      }
+      hr {
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="about_me.html">About Me</a>
+    </div>
+    <div class="main-area">
+        <div class="content">
+            <center><h3>Lingo</h3></center>
+            
+            <ul>
+            <li><b>Locality of Reference Principle</b>
+                <ul>
+                <li>"A program will access a particular set of data over a short period of time"</li>
+                <li><b>Temporal locality</b> - If a memory location is accessed, it is likely to be accessed again soon.</li>
+                <li><b>Spatial locality</b> - if a memory location is accessed, nearby memory locations are likely to be accessed soon.</li>
+                </ul>
+            </li>
+            
+            <li><b>Pareto Principle (80/20 rule)</b>
+                <ul>
+                <li>"80% of effects come from 20% of causes"</li>
+                <li>A small portion of inputs often leads to the majority of outputs or results</li>
+                </ul>
+            </li>
+            
+            <li><b>Parkinson's Law</b>
+                <ul>
+                <li>"Work expands so as to fill the time available for its completion"</li>
+                </ul>
+            </li>
+            
+            <li><b>Bloom Filters</b> (source: <a href="https://how.dev/answers/what-is-a-bloom-filter" target="_blank">how.dev</a>)
+                <ul>
+                <li>A probabilistic data structure that uses bit vectors. Does not store actual data.</li>
+                <li>It can confirm absence of a Key accurately and quickly.</li>
+                <li>However presence cannot be confirmed.</li>
+                </ul>
+            </li>
+            
+            <li><b>Ephemeral</b> (source: <a href="https://chatgpt.com/c/688a5dc5-ab14-8320-a067-e8de7e42cf3c" target="_blank">chatgpt.com</a>)
+                <ul>
+                <li>Something short-lived or temporary.</li>
+                <li>Data or resources exist only for a brief period and can be destroyed/recreated without consequence.</li>
+                </ul>
+            </li>
+            
+            <li><b>Bespoke Solution vs Customized/Tailored Solution</b>
+                <ul>
+                <li><b>Bespoke</b> - Built from scratch exclusively for a specific organization or client or team</li>
+                <li><b>Customized</b> - Started with an off-the-shelf solution and tweaked it</li>
+                </ul>
+            </li>
+            
+            <li><b>Off the shelf solution</b>
+                <ul>
+                <li>A ready-made, mass-produced product that you can buy and use as-is.</li>
+                <li>Eg: CRM solutions like Salesforce, Google Office Suite</li>
+                </ul>
+            </li>
+            
+            <li><b>Out of the box solution</b>
+                <ul>
+                <li>Works immediately upon setup or installation, with no (or minimal) configuration needed.</li>
+                <li>Eg: Zoom, slack</li>
+                </ul>
+            </li>
+            </ul>
+
+            <hr style="width:100%;">
+            <div class="tags-section">
+              <b>Tags:</b> <span>technical-concepts</span><span>business-terminology</span><span>software-development</span>
+            </div>
+        </div>
+        <div class="last-updated-global"><i>Last Updated: 2025-07-27, 08:51 CT (GMT-5)</i></div>
+    </div>
+</body>
+</html> 
