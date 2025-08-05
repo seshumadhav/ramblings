@@ -204,7 +204,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li>Eg: Setting your Instagram profile picture to the same photo any number of times, does not change the profile pic.</li>
                 </ul>
             </li>
-            
+
+<li><b>Confusion Matrix</b>
+    <ul style="margin-left: 4px;">
+        <li>
+            Theory:
+            <ul style="margin-left: 4px;">
+                <li>Positive – Model thinks something needs to change</li>
+                <li>Negative – Model thinks no change is needed</li>
+                <li>True – Model was right</li>
+                <li>False – Model was wrong</li>
+            </ul>
+        </li>
+        <li>
+            Example:
+            <ul style="margin-left: 4px;">
+                <li>FP (False Positive) – Model changes a correct word OR makes a wrong correction for a typo.</li>
+                <li>FN (False Negative) – Input ❌ but model does nothing (missed correction).</li>
+                <li>TP (True Positive) – Input ❌ and model corrects it correctly.</li>
+                <li>Input already spelled correctly ✅; Model leaves it unchanged – TN (True Negative)</li>
+                <li>Input already spelled correctly ✅; Model changes it to typo – FP (False Positive)</li>
+                <li>Input spelled incorrectly ❌; Model leaves it unchanged – FN (False Negative)</li>
+                <li>Input spelled incorrectly ❌; Model changes it to another typo – FP (False Positive)</li>
+                <li>Input spelled incorrectly ❌; Model properly corrects it – TP (True Positive)</li>
+            </ul>
+        </li>
+    </ul>
+</li>
+
+                
             </ul>
 
             <hr style="width:100%;">
